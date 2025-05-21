@@ -1,0 +1,32 @@
+.des{
+    display:flex;
+    flex-direction:column;
+  margin-left:100px;
+  border-collapse:collpase;
+  margin-top:50px;
+}
+.desin{
+    display:flex;
+}
+.desin div{
+    border:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:200px;
+    height:50px;
+    font-weight:600;
+    border-collapse:collapse;
+}
+.description{
+    border:1px solid black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap:20px;
+    height:200px;
+    width:1200px;
+    padding-left:20px;
+    
+}

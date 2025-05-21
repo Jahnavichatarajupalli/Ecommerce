@@ -1,0 +1,54 @@
+.mail{
+    height:50vh;
+    background:linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    margin-top:50px;
+    /* padding-top:50px; */
+    align-items:center;
+    gap:10px;
+    width:1200px;
+    justify-content:center;
+}
+.get{
+    font-size:40px;
+    font-weight:500;
+
+}
+.subscribe{
+    font-size:20px;
+    font-weight:400;
+}
+.mailinput{
+    margin-top:20px;
+}
+.mailinput input{
+    border-radius:30px;
+    /* border:none; */
+    border:2px solid grey;
+    width:400px;
+    height:50px;
+    border-right:none;
+    outline:none;
+    padding-left:20px;
+    
+}
+.mailinput input::placeholder{
+    font-size:15px;
+    color:rgb(48, 47, 47);
+    /* margin-left:50px; */
+
+}
+.mailinput button{
+    width:150px;
+    border-radius:30px;
+    border:none;
+    height:55px;
+    background-color:black;
+    margin-left:-50px;
+    color:white;
+   
+    
+
+}

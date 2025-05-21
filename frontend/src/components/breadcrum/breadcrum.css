@@ -1,0 +1,8 @@
+.breadcrum{
+    display:flex;
+    align-items:center;
+margin-left:100px;
+font-weight:500;
+color:rgb(24, 18, 18);
+gap:10px;
+}

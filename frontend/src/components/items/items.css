@@ -1,0 +1,41 @@
+.item{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    cursor:pointer;
+
+}
+.image img{
+    height:300px;
+    width:250px;
+    object-fit:cover;
+}
+.textimage{
+    width:230px;
+    
+}
+.textimage p{
+    font-size:15px;
+    font-weight:500;
+    color:rgb(66, 64, 64);
+
+}
+.price{
+    display:flex;
+    gap:10px;
+}
+.new{
+    font-size:15px;
+    font-weight:500;
+
+}
+.old{
+    text-decoration:line-through;
+    color:grey;
+}
+.item:hover{
+    transform:scale(1.05);
+    transition:0.6s;
+
+
+}
