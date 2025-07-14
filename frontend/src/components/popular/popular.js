@@ -8,7 +8,7 @@ import {useState,useEffect} from 'react'
 const Popular = () => {
   const [popular,setpopular]=useState([])
     const getnewcollection=async()=>{
-      await fetch('http://localhost:4000/popularinwomen').then((res)=>res.json()).then((data)=>setpopular(data))
+      await fetch('https://ecommerce-f04h.onrender.com/popularinwomen').then((res)=>res.json()).then((data)=>setpopular(data))
     }
     useEffect(()=>{
       getnewcollection()
