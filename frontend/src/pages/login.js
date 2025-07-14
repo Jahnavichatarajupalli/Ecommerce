@@ -15,7 +15,7 @@ const Login = () => {
   const register=async()=>{
     let sendingdata;
     console.log(details)
-    await fetch("http://localhost:4000/signup",{
+    await fetch("https://ecommerce-f04h.onrender.com/signup",{
       method:"POST",
       headers:{
           Accept:'application/json',
@@ -40,7 +40,7 @@ const Login = () => {
     console.log("login")
     let result;
     let sendingdata={email:details.email,password:details.password}
-    await fetch("http://localhost:4000/login",{
+    await fetch("https://ecommerce-f04h.onrender.com/login",{
       method:"POST",
       headers:{
           Accept:'application/json',
