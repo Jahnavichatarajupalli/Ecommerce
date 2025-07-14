@@ -7,7 +7,7 @@ import {useState,useEffect} from 'react'
 const Newcollection = () => {
   const [newcollection,setnewcollection]=useState([])
   const getnewcollection=async()=>{
-    await fetch('http://localhost:4000/newcollection').then((res)=>res.json()).then((data)=>setnewcollection(data))
+    await fetch('https://ecommerce-f04h.onrender.com/newcollection').then((res)=>res.json()).then((data)=>setnewcollection(data))
   }
   useEffect(()=>{
     getnewcollection()
