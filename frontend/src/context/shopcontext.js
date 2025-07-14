@@ -18,14 +18,14 @@ const Shopcontext = (props) => {
     // Fetch products from the backend
     async function getproducts() {
         try {
-            const res = await fetch("http://localhost:4000/getproducts");
+            const res = await fetch("https://ecommerce-f04h.onrender.com/getproducts");
             const data = await res.json();
             setallproducts(data);
         } catch (error) {
             console.error("Error fetching products:", error);
         }
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/getcart',{
+            fetch('https://ecommerce-f04h.onrender.com/getcart',{
                 method:'POST',
                 headers:{
                     Accept:'application/form-data',
@@ -55,7 +55,7 @@ const Shopcontext = (props) => {
         setcartitem((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
 
         if (localStorage.getItem("auth-token")) {
-            fetch("http://localhost:4000/addtocart", {
+            fetch("https://ecommerce-f04h.onrender.com/addtocart", {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
@@ -75,7 +75,7 @@ const Shopcontext = (props) => {
         setcartitem((prev) => ({ ...prev, [itemId]: Math.max(0, prev[itemId] - 1) }));
         if (localStorage.getItem("auth-token")) {
             console.log("hello")
-            fetch("http://localhost:4000/removefromcart", {
+            fetch("https://ecommerce-f04h.onrender.com/removefromcart", {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
