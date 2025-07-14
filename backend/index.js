@@ -8,7 +8,7 @@ const path=require('path')
 const cors=require('cors')
 app.use(express.json())
 app.use(cors());
-mongoose.connect('mongodb://localhost:27017/ecommerce').then(()=>{
+mongoose.connect('mongodb+srv://n210300:Py43Q0X2NJNm15of@cluster0.ebqsy7q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
     console.log("connected to mongodb")}).catch((error)=>{
         console.log(error)})
 app.get("/",(req,res)=>{
